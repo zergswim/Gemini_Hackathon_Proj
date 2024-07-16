@@ -1,9 +1,9 @@
 # Project Name : GemiQuiz (Gemini Hackathon)
 
-![캡처1](https://github.com/user-attachments/assets/77165c94-6568-4323-8486-a79a55452125)
-![캡처2](https://github.com/user-attachments/assets/26b78064-b2c3-4eea-9638-aab8e9fbc459)
-![캡처3](https://github.com/user-attachments/assets/211f4ccb-f261-42d7-a8a2-9f0b47721ce3)
-![캡처4](https://github.com/user-attachments/assets/4b1bb2c4-466e-4f91-9ed6-8a63b464216b)
+![캡처1](https://github.com/user-attachments/assets/b8d98955-b2ae-455f-85c0-6d4e0737a7ec)
+![캡처2](https://github.com/user-attachments/assets/c1ef2e0a-aa40-4489-b032-023cfb9abd12)
+![캡처3](https://github.com/user-attachments/assets/5f044f54-f646-469a-b935-f87c29c85e19)
+![캡처4](https://github.com/user-attachments/assets/5ef4072a-53a5-4351-acaf-cc3d79e36fad)
 
 ## [참조 : libs.versions.toml]
 <pre>
