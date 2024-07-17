@@ -76,15 +76,13 @@ fun QuizScreen(
 
       Button(
         onClick = {
-          //imageUrls.clear()
-          //wordViewModel.sendPrompt(prompt)
           if(answer == prompt)
           {
-            Toast.makeText(context, "정답입니다.", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "Correct.", Toast.LENGTH_SHORT).show()
             wordViewModel.navigateToGenerateScreen()
           }
           else
-            Toast.makeText(context, "오답입니다.", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "Wrong.", Toast.LENGTH_SHORT).show()
 
         },
         enabled = prompt.isNotEmpty(),
@@ -149,7 +147,7 @@ fun QuizScreen(
             .verticalScroll(rememberScrollState())
         ){
           Text(
-            text = "Image: ",
+            text = "Image: $image_txt",
             modifier = Modifier.padding(16.dp)
           )
 
@@ -208,7 +206,7 @@ fun QuizScreen(
             onClick = { wordViewModel.navigateToWordScreen(answer) },
             modifier = Modifier.padding(16.dp)
           ) {
-            Text("Find a word")
+            Text("Find")
           }
         }
 

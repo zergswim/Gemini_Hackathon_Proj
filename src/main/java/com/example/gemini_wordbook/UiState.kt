@@ -13,7 +13,7 @@ sealed interface UiState {
   /**
    * Still loading
    */
-  object Loading : UiState
+  data class Loading(val prompt: String) : UiState
 
   /**
    * Text has been generated

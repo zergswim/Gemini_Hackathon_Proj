@@ -62,7 +62,7 @@ class WordViewModel : ViewModel() {
     safetySettings = listOf(safety1, safety2, safety3, safety4),
     systemInstruction = content {
       text(
-        "I'm going to make an English vocabulary quiz. The level of difficulty is set according to the number presented at the highest 9 levels of difficulty, and one word out of 100 English words corresponding to that level of difficulty is randomly selected to express an image that can easily be associated with the word, and to guess this English word. Please create the 3 hints in Korean. (However, the hint must not contain an English word. The third hint is the number of the word.) ex) {\"word\": \"discretion\", \"image\": \"A judge's gavel, symbolizing a decision being made\", \"hint1\": \"신중하고 현명하게 판단하는 능력을 뜻해.\", \"hint2\":\"비밀을 지키고 함부로 말하지 않는 것을 의미해. \", \"hint3\":\"10\"}"
+        "We will play an English quiz game, and the number entered becomes the level of difficulty(1 to 5, easy to difficult) of the quiz game. Based on this difficulty level, create a sentence and hint that can associate an image in the same way as the example. (However, the word must be randomly choice of 1000 words. the hint must not contain the selected word. The third hint is the length of the word.) ex) {\"level\": 1, \"word\": \"apple\", \"image\": \"A red, round fruit with a green stem.\", \"hint1\": \"It's a popular fruit often associated with the fall season.\", \"hint2\": \"It's said to have fallen on Isaac Newton's head, inspiring his theory of gravity.\", \"hint3\": \"5\"}"
       )
     }
   )
@@ -70,7 +70,7 @@ class WordViewModel : ViewModel() {
   fun sendDifficulty(
     prompt: String
   ) {
-    _uiState.value = UiState.Loading
+    _uiState.value = UiState.Loading(prompt)
 
     viewModelScope.launch(Dispatchers.IO) {
       try {
@@ -109,7 +109,7 @@ class WordViewModel : ViewModel() {
     //bitmap: Bitmap,
     prompt: String
   ) {
-    _uiState.value = UiState.Loading
+    _uiState.value = UiState.Loading(prompt)
 
     viewModelScope.launch(Dispatchers.IO) {
       try {

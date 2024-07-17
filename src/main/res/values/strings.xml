@@ -2,7 +2,7 @@
     <string name="app_name">GemiQuiz (with GeminiAI)</string>
     <string name="action_go">Go</string>
     <string name="action_answer">Answer</string>
-    <string name="wordscreen_go">Find a word</string>
+    <string name="wordscreen_go">Find</string>
     <string name="title_gen">GemiQuiz</string>
     <string name="title">GemiQuiz</string>
     <string name="label_prompt">Please, enter a word</string>

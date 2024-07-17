@@ -2,6 +2,7 @@ package com.example.gemini_wordbook
 
 import android.content.ContentValues.TAG
 import android.util.Log
+import android.widget.Toast
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyRow
@@ -49,7 +50,7 @@ fun WordScreen(
     modifier = Modifier.fillMaxSize()
   ) {
     Text(
-      text = "Find a word",
+      text = "Find",
       style = MaterialTheme.typography.titleLarge,
       modifier = Modifier.padding(16.dp)
     )
@@ -97,6 +98,8 @@ fun WordScreen(
         CircularProgressIndicator(modifier = Modifier.align(Alignment.CenterHorizontally))
         ttsOk = true
         //Log.d(TAG, "loading ttsOk: " + ttsOk.toString())
+
+        prompt = currentState.prompt
       }
       is UiState.Error -> {
         Text(
@@ -111,6 +114,7 @@ fun WordScreen(
         val result = currentState.outputText
 
         val jsonObject = JSONObject(result)
+        val word = jsonObject.optString("word", "Not available")
         val etymology = jsonObject.optString("etymology", "Not available")
         val example = jsonObject.optString("example", "Not available")
 
@@ -120,12 +124,12 @@ fun WordScreen(
             .verticalScroll(rememberScrollState())
         ){
           Text(
-            text = "어원: $etymology",
+            text = "etymology: $etymology",
             modifier = Modifier.padding(16.dp)
           )
 
           Text(
-            text = "예문: $example",
+            text = "example: $example",
             modifier = Modifier.padding(16.dp)
           )
 

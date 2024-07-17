@@ -39,7 +39,7 @@ fun GenerateScreen(
                 modifier = Modifier.padding(16.dp)
             )
 
-            for (i in 9 downTo 1) {
+            for (i in 1..5) {
                 NumberButton(
                     number = i,
                     isSelected = selectedNumber == i,
@@ -61,33 +61,6 @@ fun GenerateScreen(
             }
         }
     }
-
-
-//            TextField(
-//                value = prompt,
-//                label = { Text(stringResource(R.string.label_prompt)) },
-//
-//                onValueChange = { prompt = it },
-//                //onValueChange = { wordViewModel.updateInputText(it) },
-//
-//                modifier = Modifier
-//                    .weight(0.8f)
-//                    .padding(end = 16.dp)
-//                    .align(Alignment.CenterVertically)
-//            )
-
-//        Column(modifier = Modifier.padding(all = 16.dp)) {
-//            Button(
-//                onClick = {
-//                    wordViewModel.navigateToWordScreen()
-//                },
-//                modifier = Modifier
-//                    .align(Alignment.CenterHorizontally)
-//            ) {
-//                Text(text = stringResource(R.string.wordscreen_go))
-//            }
-//        }
-
 }
 
 @Composable
