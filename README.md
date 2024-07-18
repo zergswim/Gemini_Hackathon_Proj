@@ -20,6 +20,9 @@ Android Studio (tested by API Level 26 : Android 8.0(Oreo) )<br>
 ![screen3](https://github.com/user-attachments/assets/df64dcff-dc75-41ca-8341-4cd989fc5a58)
 <br>
 
+## Youtube 시연
+[![Video Label](http://img.youtube.com/vi/'유튜브주소의id'/0.jpg)](https://www.youtube.com/watch?v=-V13tHHUYQI)
+
 ## [참조 : libs.versions.toml]
 <pre>
 [versions]
