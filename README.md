@@ -1,7 +1,17 @@
 # Project Name : GemiQuiz (Gemini Hackathon)
 
+## Skill & Environment
+Gemini 1.5 Flash API
+Google Image Search API
+Android Studio (test : 
+
+## Screen 1
 ![screen1](https://github.com/user-attachments/assets/76d9856f-d75b-44e4-b71a-70a592ec3c7e)
+
+## Screen 2
 ![screen2](https://github.com/user-attachments/assets/dc2ebd0f-cfe5-473b-93d8-194a4d56fe75)
+
+## Screen 3
 ![screen3](https://github.com/user-attachments/assets/df64dcff-dc75-41ca-8341-4cd989fc5a58)
 
 ## [참조 : libs.versions.toml]
