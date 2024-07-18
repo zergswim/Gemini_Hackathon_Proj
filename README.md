@@ -21,7 +21,7 @@ Android Studio (tested by API Level 26 : Android 8.0(Oreo) )<br>
 <br>
 
 ## Youtube 시연
-[![image](https://github.com/user-attachments/assets/5f1338c5-9ceb-4c53-b59f-eecab151f0e7)](https://www.youtube.com/watch?v=-V13tHHUYQI)
+[![캡처2](https://github.com/user-attachments/assets/35e23c6b-bfdb-4b25-9193-ad7f9c9c1cd6)](https://www.youtube.com/watch?v=JBxpocAQHlQ)
 
 ## [참조 : libs.versions.toml]
 <pre>
