@@ -143,7 +143,7 @@ fun WordScreen(
           val image_txt = jsonObject.optString("image", "")
 
           Text(
-            text = "시각화: $image_txt",
+            text = "image: $image_txt",
             modifier = Modifier.padding(16.dp)
           )
 

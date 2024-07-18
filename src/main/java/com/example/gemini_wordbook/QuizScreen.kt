@@ -169,7 +169,9 @@ fun QuizScreen(
           val (hintText1, setHint1) = remember { mutableStateOf("Click me to see the hint 1") }
 
           Button(
-            onClick = { setHint1(hint1) },
+            onClick = {
+              setHint1(hint1)
+              ttsManager.speak(hint1) },
             modifier = Modifier.padding(16.dp)
           ) {
             Text(hintText1)
@@ -178,7 +180,9 @@ fun QuizScreen(
           val (hintText2, setHint2) = remember { mutableStateOf("Click me to see the hint 2") }
 
           Button(
-            onClick = { setHint2(hint2) },
+            onClick = {
+              setHint2(hint2)
+              ttsManager.speak(hint2) },
             modifier = Modifier.padding(16.dp)
           ) {
             Text(hintText2)
@@ -187,7 +191,9 @@ fun QuizScreen(
           val (hintText3, setHint3) = remember { mutableStateOf("Click me to see the hint 3") }
 
           Button(
-            onClick = { setHint3(hint3) },
+            onClick = {
+              setHint3(hint3)
+              ttsManager.speak(hint3) },
             modifier = Modifier.padding(16.dp)
           ) {
             Text(hintText3)
@@ -196,7 +202,9 @@ fun QuizScreen(
           val (hintText4, setHint4) = remember { mutableStateOf("Click me to see the answer") }
 
           Button(
-            onClick = { setHint4(answer) },
+            onClick = {
+              setHint4(answer)
+              ttsManager.speak(answer) },
             modifier = Modifier.padding(16.dp)
           ) {
             Text(hintText4)
