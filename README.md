@@ -4,6 +4,11 @@
 Gemini 1.5 Flash API<br>
 Google Image Search API<br>
 Android Studio (tested by API Level 26 : Android 8.0(Oreo) )<br>
+<br>
+
+## [흐름도 설명]
+![images](https://github.com/user-attachments/assets/38a2f4f2-c194-4f9b-afe2-788ec97951fc)
+<br>
 
 ## Screen 1
 ![screen1](https://github.com/user-attachments/assets/76d9856f-d75b-44e4-b71a-70a592ec3c7e)
@@ -13,9 +18,6 @@ Android Studio (tested by API Level 26 : Android 8.0(Oreo) )<br>
 
 ## Screen 3
 ![screen3](https://github.com/user-attachments/assets/df64dcff-dc75-41ca-8341-4cd989fc5a58)
-<br>
-## [흐름도 설명]
-![images](https://github.com/user-attachments/assets/38a2f4f2-c194-4f9b-afe2-788ec97951fc)
 <br>
 
 ## [참조 : libs.versions.toml]
